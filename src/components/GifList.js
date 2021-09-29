@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gif, Grid } from '@giphy/react-components';
+import { Gif } from '@giphy/react-components';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 export default function GifList(props) {
