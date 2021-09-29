@@ -56,7 +56,7 @@ function App() {
   }
 
   const autoSuggestion = async (text) => {
-    let res = await fetch('https://api.giphy.com/v1/gifs/search/tags' + '?api_key=BefYsaUfNibufcFI0CWoBEJr7n9g3vvk&q=' + text + '&limit=25&offset=0&rating=g&lang=en', {
+   await fetch(`https://api.giphy.com/v1/gifs/search/tags?api_key=BefYsaUfNibufcFI0CWoBEJr7n9g3vvk&q=${text}&limit=25&offset=0&rating=g&lang=en`, {
       method: 'GET',
       api_key: 'BefYsaUfNibufcFI0CWoBEJr7n9g3vvk'
     }).then(result => {
